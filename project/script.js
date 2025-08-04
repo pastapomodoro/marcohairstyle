@@ -29,9 +29,9 @@ function closeMobileMenu() {
 function scrollToSection(sectionId) {
     const element = document.getElementById(sectionId);
     if (element) {
-        const headerHeight = document.querySelector('.header').offsetHeight;
-        const elementPosition = element.offsetTop - headerHeight;
-        
+        const header = document.querySelector('.header');
+        const headerHeight = header ? header.offsetHeight : 0;
+        const elementPosition = element.getBoundingClientRect().top + window.pageYOffset - headerHeight - 10;
         window.scrollTo({
             top: elementPosition,
             behavior: 'smooth'
@@ -39,6 +39,7 @@ function scrollToSection(sectionId) {
     }
     closeMobileMenu();
 }
+window.scrollToSection = scrollToSection;
 
 // Smooth scrolling for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
