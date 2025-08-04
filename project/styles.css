@@ -904,3 +904,61 @@ body {
     padding: 0.5rem 0;
   }
 }
+
+.service-divider {
+  border: none;
+  border-top: 2px dashed #fff;
+  margin: 1rem 0 0.5rem 0;
+  width: 100%;
+  opacity: 0.7;
+}
+
+.stats-buttons {
+  display: flex;
+  gap: 1rem;
+  margin: 2rem 0 1rem 0;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.stat-btn {
+  background: #d4af37;
+  color: #333;
+  border: none;
+  border-radius: 30px;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  transition: background 0.3s, transform 0.2s;
+  cursor: default;
+}
+.stat-btn:hover {
+  background: #b8941f;
+  transform: translateY(-2px) scale(1.03);
+}
+.stat-btn .stat-number {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+  color: #222;
+}
+.stat-btn .stat-text {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #333;
+}
+@media (max-width: 600px) {
+  .stats-buttons {
+    flex-direction: column;
+    gap: 0.7rem;
+    align-items: center;
+  }
+  .stat-btn {
+    width: 100%;
+    min-width: 0;
+    padding: 1rem;
+  }
+}
