@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marco acconciature - Parrucchiere Professionale Verona</title>
+    <meta name="description" content="Marco Acconciature: salone di bellezza professionale a Verona. Taglio, colore, styling e trattamenti per capelli. Prenota il tuo appuntamento oggi stesso.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <!-- Logo -->
+                <div class="logo">
+                    <i class="fas fa-cut"></i>
+                    <span>Marco Acconciature</span>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="nav-desktop">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#services" class="nav-link">Servizi</a>
+                    <a href="#gallery" class="nav-link">Gallery</a>
+                    <a href="#about" class="nav-link">Chi Siamo</a>
+                    <a href="#contact" class="nav-link">Contatti</a>
+                </nav>
+
+                <!-- CTA Button -->
+                <button class="cta-button" onclick="openBookingModal()">Prenota Ora</button>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <nav class="nav-mobile" id="mobileNav">
+                <a href="#home" class="nav-link" onclick="closeMobileMenu()">Home</a>
+                <a href="#services" class="nav-link" onclick="closeMobileMenu()">Servizi</a>
+                <a href="#gallery" class="nav-link" onclick="closeMobileMenu()">Gallery</a>
+                <a href="#about" class="nav-link" onclick="closeMobileMenu()">Chi Siamo</a>
+                <a href="#contact" class="nav-link" onclick="closeMobileMenu()">Contatti</a>
+                <button class="cta-button mobile" onclick="openBookingModal()">Prenota Ora</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Il Tuo Stile, <span class="highlight">La Nostra Arte</span></h1>
+                    <p>Scopri la professionalità e la passione di Marco acconciature a Verona. Trasformiamo i tuoi capelli in un'opera d'arte con tecniche moderne e prodotti di alta qualità.</p>
+                    <div class="hero-buttons">
+                        <button class="btn-primary" onclick="openBookingModal()">Prenota Appuntamento</button>
+                        <button class="btn-secondary" onclick="scrollToSection('gallery')">Guarda i Nostri Lavori</button>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="https://images.pexels.com/photos/3993449/pexels-photo-3993449.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Salone professionale">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>I Nostri Servizi</h2>
+                <p>Marco acconciature - Cura dei Capelli - Servizi professionali per donna e uomo</p>
+            </div>
+
+            <!-- Header principale -->
+            <div class="services-header">
+                <div class="services-logo">
+                    <i class="fas fa-cut"></i>
+                    <div>
+                        <h3>MARCO</h3>
+                        <p>CURA DEI CAPELLI</p>
+                    </div>
+                </div>
+                <div class="appointment-info">
+                    <p>per appuntamento</p>
+                    <p class="phone">045 801 1025</p>
+                </div>
+            </div>
+
+            <!-- Sezioni servizi in orizzontale -->
+            <div class="services-grid">
+                <!-- Sezione DONNA -->
+                <div class="service-section">
+                    <div class="section-header-service">
+                        <h4>DONNA</h4>
+                    </div>
+                    <div class="service-items">
+                        <div class="service-item">
+                            <span>TAGLIO</span>
+                            <span class="price">€ 24⁰⁰</span>
+                        </div>
+                        <div class="service-item">
+                            <span>PIEGA</span>
+                            <span class="price">€ 22⁰⁰/€27⁰⁰</span>
+                        </div>
+                        <div class="service-item">
+                            <span>COLPI DI SOLE</span>
+                            <span class="price">€ 43⁰⁰</span>
+                        </div>
+                        <div class="service-item">
+                            <span>MECHES</span>
+                            <span class="price">€ 55⁰⁰</span>
+                        </div>
+                        <div class="service-item">
+                            <span>BALAYAGE</span>
+                            <span class="price">€ 55⁰⁰</span>
+                        </div>
+                        <div class="service-item">
+                            <span>SHATUSH</span>
+                            <span class="price">€ 55⁰⁰</span>
+                        </div>
+                        <div class="service-item">
+                            <span>COLORE</span>
+                            <span class="price">€ 36⁰⁰</span>
+                        </div>
+                        <div class="service-item">
+                            <span>PERMANENTE</span>
+                            <span class="price">€ 44⁰⁰</span>
+                        </div>
+                        <div class="service-item">
+                            <span>KERATINA</span>
+                            <span class="price">€ 5⁰⁰/gr</span>
+                        </div>
+                        <div class="service-item">
+                            <span>STIRATURA NANOPLASTIA</span>
+                            <span class="price">€ 4⁰⁰/gr</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sezione TRATTAMENTI -->
+                <div class="service-section">
+                    <div class="section-header-service">
+                        <h4>TRATTAMENTI</h4>
+                    </div>
+                    <div class="service-items">
+                        <div class="service-item">
+                            <span>CREMA RISTRUTTURANTE</span>
+                            <span class="price">€ 4⁰⁰</span>
+                        </div>
+                        <div class="service-item">
+                            <span>RICOSTRUZIONE</span>
+                            <span class="price">€ 17⁰⁰</span>
+                        </div>
+                        <div class="service-item">
+                            <span>FISSATORE</span>
+                            <span class="price">€ 2⁰⁰</span>
+                        </div>
+                        <div class="service-item">
+                            <span>FIALA ANTICADUTA</span>
+                            <span class="price">€ 7⁰⁰</span>
+                        </div>
+                        <div class="service-item">
+                            <span>ACCONCIATURA</span>
+                            <span class="price">€ 35⁰⁰/70⁰⁰</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sezione UOMO -->
+                <div class="service-section">
+                    <div class="section-header-service">
+                        <h4>UOMO</h4>
+                    </div>
+                    <div class="service-items">
+                        <div class="service-item">
+                            <span>TAGLIO</span>
+                            <span class="price">€ 23⁰⁰</span>
+                        </div>
+                        <div class="service-item">
+                            <span>REGOLAZIONE BARBA</span>
+                            <span class="price">€ 5⁰⁰</span>
+                        </div>
+                        <div class="service-item">
+                            <span>TRATTAMENTO ANTICADUTA</span>
+                            <span class="price">€ 12⁰⁰</span>
+                        </div>
+                        <div class="service-item">
+                            <span>COLORE</span>
+                            <span class="price">€ 15⁰⁰/20⁰⁰</span>
+                        </div>
+                        <div class="service-item">
+                            <span>TAGLIO BIMBO</span>
+                            <span class="price">€ 17⁰⁰</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Avviso prezzi -->
+            <div class="price-notice">
+                <p>I prezzi possono variare in base al tipo di capelli e alla quantità di prodotto utilizzata.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>I Nostri Lavori</h2>
+                <p>Scopri alcuni dei nostri migliori lavori e lasciati ispirare</p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.pexels.com/photos/3065209/pexels-photo-3065209.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Lavoro 1">
+                    <div class="gallery-overlay">
+                        <button class="gallery-btn">Vedi Dettagli</button>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.pexels.com/photos/3065171/pexels-photo-3065171.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Lavoro 2">
+                    <div class="gallery-overlay">
+                        <button class="gallery-btn">Vedi Dettagli</button>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.pexels.com/photos/3993449/pexels-photo-3993449.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Lavoro 3">
+                    <div class="gallery-overlay">
+                        <button class="gallery-btn">Vedi Dettagli</button>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.pexels.com/photos/897262/pexels-photo-897262.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Lavoro 4">
+                    <div class="gallery-overlay">
+                        <button class="gallery-btn">Vedi Dettagli</button>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.pexels.com/photos/3065209/pexels-photo-3065209.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Lavoro 5">
+                    <div class="gallery-overlay">
+                        <button class="gallery-btn">Vedi Dettagli</button>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.pexels.com/photos/3065171/pexels-photo-3065171.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Lavoro 6">
+                    <div class="gallery-overlay">
+                        <button class="gallery-btn">Vedi Dettagli</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Chi Siamo</h2>
+                    <p>Da oltre 15 anni, Marco acconciature è un punto di riferimento a Verona per chi cerca stile, qualità e attenzione al cliente. Marco e il suo team di professionisti uniscono esperienza, creatività e aggiornamento continuo per offrire servizi personalizzati e risultati eccellenti.</p>
+                    <p>Utilizziamo solo prodotti selezionati e tecniche innovative per garantire la massima soddisfazione. Ogni cliente è unico e merita un trattamento su misura.</p>
+                    <div class="stats">
+                        <div class="stat">
+                            <div class="stat-number">15+</div>
+                            <div class="stat-text">Anni di Esperienza</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">1000+</div>
+                            <div class="stat-text">Clienti Soddisfatti</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.pexels.com/photos/3993449/pexels-photo-3993449.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Il nostro team">
+                    <div class="founder-card">
+                        <h4>Marco Rossi</h4>
+                        <p>Master Stylist & Founder</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contattaci</h2>
+                <p>Per informazioni o appuntamenti, chiamaci o vieni a trovarci in salone.</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Marco acconciature</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>Indirizzo</h4>
+                        <p>Via Guglielmo Marconi, 41, 37122 Verona VR</p>
+                        <a href="https://www.google.com/maps/place/Parrucchiere+Marco+Verona/@45.4341351,10.9849021,17z/data=!3m1!4b1!4m6!3m5!1s0x477f5f5cdf2389ef:0xa60373d1733e411f!8m2!3d45.4341351!4d10.9849021!16s%2Fg%2F1hc4ssxst?entry=ttu" target="_blank" rel="noopener">Vedi su Google Maps</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <h4>Telefono</h4>
+                        <p>045 801 1025</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <i class="fas fa-cut"></i>
+                        <span>Marco Acconciature</span>
+                    </div>
+                    <p>Il tuo salone di fiducia a Verona per uno stile impeccabile e trattamenti di qualità superiore.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Servizi</h4>
+                    <ul>
+                        <li><a href="#">Taglio & Styling</a></li>
+                        <li><a href="#">Colore & Highlights</a></li>
+                        <li><a href="#">Trattamenti</a></li>
+                        <li><a href="#">Acconciature Sposa</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Marco Acconciature. Tutti i diritti riservati.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Booking Modal -->
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Prenota Appuntamento</h3>
+                <button class="close-btn" onclick="closeBookingModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <form onsubmit="handleBookingSubmit(event)">
+                <div class="form-row">
+                    <input type="text" placeholder="Nome" required>
+                    <input type="text" placeholder="Cognome" required>
+                </div>
+                
+                <input type="email" placeholder="Email" required>
+                <input type="tel" placeholder="Telefono" required>
+                
+                <select required>
+                    <option value="">Seleziona un servizio</option>
+                    <option value="taglio">Taglio & Styling</option>
+                    <option value="colore">Colore & Highlights</option>
+                    <option value="trattamenti">Trattamenti Rigeneranti</option>
+                    <option value="sposa">Acconciature Sposa</option>
+                    <option value="barba">Barba & Baffi</option>
+                    <option value="estensioni">Estensioni Capelli</option>
+                </select>
+                
+                <div class="form-row">
+                    <input type="date" required>
+                    <input type="time" required>
+                </div>
+                
+                <textarea rows="3" placeholder="Note aggiuntive"></textarea>
+                
+                <div class="modal-buttons">
+                    <button type="button" class="btn-secondary" onclick="closeBookingModal()">Annulla</button>
+                    <button type="submit" class="btn-primary">Prenota</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Floating Call Button (solo mobile) -->
+    <button class="fab-prenota" onclick="window.location.href='tel:0458011025'" aria-label="Chiama ora">
+      <i class="fas fa-phone"></i>
+      <span class="fab-label">Chiama</span>
+    </button>
+    <!-- Overlay per menu mobile -->
+    <div class="mobile-overlay" id="mobileOverlay" onclick="closeMobileMenu()"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
