@@ -29,7 +29,7 @@
                 </nav>
 
                 <!-- CTA Button -->
-                <button class="cta-button" onclick="openBookingModal()">Prenota Ora</button>
+                <button class="cta-button" onclick="window.location.href='tel:0458011025'">Prenota Ora</button>
 
                 <!-- Mobile Menu Button -->
                 <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
@@ -44,7 +44,7 @@
                 <a href="#gallery" class="nav-link" onclick="closeMobileMenu()">Gallery</a>
                 <a href="#about" class="nav-link" onclick="closeMobileMenu()">Chi Siamo</a>
                 <a href="#contact" class="nav-link" onclick="closeMobileMenu()">Contatti</a>
-                <button class="cta-button mobile" onclick="openBookingModal()">Prenota Ora</button>
+                <button class="cta-button mobile" onclick="window.location.href='tel:0458011025'">Prenota Ora</button>
             </nav>
         </div>
     </header>
@@ -58,7 +58,7 @@
                     <p>Scopri la professionalità e la passione di Marco acconciature a Verona. Trasformiamo i tuoi capelli in un'opera d'arte con tecniche moderne e prodotti di alta qualità.</p>
                     <div class="hero-buttons">
                         <button class="btn-primary" onclick="window.location.href='tel:0458011025'">Prenota Appuntamento</button>
-                        <button class="btn-secondary" onclick="scrollToSection('gallery')">Guarda i Nostri Lavori</button>
+                        <a href="#gallery" class="btn-secondary" onclick="scrollToSection('gallery'); return false;">Guarda i Nostri Lavori</a>
                     </div>
                 </div>
                 <div class="hero-image">
